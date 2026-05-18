@@ -21,7 +21,7 @@
     html { scroll-behavior: smooth; }
     body { font-family: var(--ff-body); color: var(--text); background: var(--white); overflow-x: hidden; }
     a { color: inherit; text-decoration: none; }
-    .container { width: min(1160px, 90%); margin-inline: auto; }
+    .container { width: min(1380px, 94%); margin-inline: auto; }
     .section-label { font-size: .72rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: .8rem; }
     .btn { display: inline-flex; align-items: center; gap: .55rem; padding: .85rem 2rem; border-radius: 4px; font-family: var(--ff-body); font-size: .9rem; font-weight: 500; cursor: pointer; border: none; transition: transform .2s var(--ease), box-shadow .2s var(--ease), background .2s; }
     .btn:hover { transform: translateY(-2px); }
@@ -362,6 +362,55 @@
     </div>
   </section>
 
+
+  <!-- RESEÑAS -->
+  <section id="resenas" style="padding:3.5rem 0; background:var(--offwhite);">
+    <div class="container">
+      <div class="section-label reveal">Lo que dicen nuestros clientes</div>
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;" class="reveal reveal-delay-1">
+        <span style="font-family:var(--ff-head);font-size:3rem;font-weight:700;color:var(--navy);line-height:1;">5.0</span>
+        <div>
+          <div style="color:#F59E0B;font-size:1.4rem;letter-spacing:3px;">★★★★★</div>
+          <span style="font-size:.85rem;color:var(--gray);">Basado en 13 reseñas de Google</span>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem;">
+        <div class="reveal" style="background:var(--white);border-radius:12px;padding:1.6rem;border:1px solid rgba(13,31,60,.07);box-shadow:0 4px 20px rgba(13,31,60,.05);">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.8rem;">
+            <div style="display:flex;align-items:center;gap:.7rem;">
+              <div style="width:40px;height:40px;border-radius:50%;background:var(--mid);display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:1rem;flex-shrink:0;">C</div>
+              <div>
+                <div style="font-weight:500;font-size:.9rem;color:var(--navy);">Carpintería Las Palmas Premium SLU</div>
+                <div style="font-size:.75rem;color:var(--gray);">Hace 2 meses · 5 reseñas</div>
+              </div>
+            </div>
+            <div style="color:#F59E0B;font-size:.95rem;">★★★★★</div>
+          </div>
+          <p style="font-size:.84rem;color:#4a5568;line-height:1.7;margin:0;">"Son profesionales, cercanos y muy resolutivos. Siempre responden rápido y explican todo de forma clara. Además, el dueño habla chino, lo que facilita muchísimo las negociaciones de importación y la comunicación con proveedores asiáticos. Es una ventaja enorme si trabajas con China. No es solo una gestoría que presenta papeles, es un equipo que entiende el negocio y aporta valor real. Totalmente recomendable."</p>
+        </div>
+        <div class="reveal reveal-delay-1" style="background:var(--white);border-radius:12px;padding:1.6rem;border:1px solid rgba(13,31,60,.07);box-shadow:0 4px 20px rgba(13,31,60,.05);">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.8rem;">
+            <div style="display:flex;align-items:center;gap:.7rem;">
+              <div style="width:40px;height:40px;border-radius:50%;background:#1557B0;display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:1rem;flex-shrink:0;">A</div>
+              <div>
+                <div style="font-weight:500;font-size:.9rem;color:var(--navy);">Andres García</div>
+                <div style="font-size:.75rem;color:var(--gray);">Hace un año · 3 reseñas</div>
+              </div>
+            </div>
+            <div style="color:#F59E0B;font-size:.95rem;">★★★★★</div>
+          </div>
+          <p style="font-size:.84rem;color:#4a5568;line-height:1.7;margin:0;">"¡Excelente experiencia con esta asesoría! Desde el primer contacto fueron muy profesionales, atentos y comprometidos con mis objetivos. Me ofrecieron un acompañamiento personalizado, resolvieron todas mis dudas con claridad y me ayudaron a tomar decisiones informadas. Sin duda, los recomendaría a cualquiera que esté buscando orientación confiable y de calidad. ¡Gracias por todo!"</p>
+        </div>
+        <div class="reveal reveal-delay-2" style="background:linear-gradient(135deg,var(--navy),var(--blue));border-radius:12px;padding:1.6rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:200px;">
+          <div style="color:#F59E0B;font-size:1.6rem;margin-bottom:.6rem;">★★★★★</div>
+          <div style="font-family:var(--ff-head);font-size:1.8rem;font-weight:700;color:white;margin-bottom:.3rem;">5.0 / 5</div>
+          <div style="font-size:.82rem;color:rgba(255,255,255,.7);margin-bottom:1.2rem;">13 reseñas verificadas en Google</div>
+          <a href="https://g.page/r/CasesorianovaleiTelde/review" target="_blank" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:var(--navy);padding:.6rem 1.3rem;border-radius:4px;font-size:.82rem;font-weight:500;text-decoration:none;">Ver todas en Google →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PROCESO -->
   <section id="proceso">
     <div class="container">
@@ -392,35 +441,6 @@
             <div class="contact-item"><div class="contact-item-icon">💬</div><a href="https://wa.me/34622186609" target="_blank" style="color:inherit;">WhatsApp: 622 18 66 09</a></div>
             <div class="contact-item"><div class="contact-item-icon">📍</div><a href="https://maps.google.com/?q=C.+Buzo,+5,+35219+Telde,+Las+Palmas" target="_blank" style="color:inherit;">C. Buzo, 5 · 35219 Telde, Las Palmas</a></div>
             <div class="contact-item"><div class="contact-item-icon">🕐</div><span>Lun – Vie · 8:30 – 13:30</span></div>
-          </div>
-        </div>
-
-        <!-- RESEÑAS -->
-        <div class="reviews-block reveal" style="margin-top:2rem;">
-          <div class="section-label" style="margin-bottom:.8rem;">Reseñas de clientes</div>
-          <div style="display:flex; align-items:center; gap:.8rem; margin-bottom:1.2rem;">
-            <span style="font-family:var(--ff-head);font-size:2.5rem;font-weight:700;color:var(--navy);line-height:1;">5.0</span>
-            <div>
-              <div style="color:#F59E0B;font-size:1.2rem;letter-spacing:2px;">★★★★★</div>
-              <a href="https://g.page/r/asesorianovalei/review" target="_blank" style="font-size:.8rem;color:var(--mid);text-decoration:underline;">13 reseñas en Google</a>
-            </div>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:.8rem;">
-            <div style="background:var(--offwhite);border-radius:10px;padding:1rem 1.2rem;border:1px solid rgba(13,31,60,.07);">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem;">
-                <span style="font-weight:500;font-size:.88rem;color:var(--navy);">Cliente verificado</span>
-                <span style="color:#F59E0B;font-size:.9rem;">★★★★★</span>
-              </div>
-              <p style="font-size:.82rem;color:var(--gray);line-height:1.6;margin:0;">"Atención excelente, muy profesional y siempre disponible para resolver cualquier duda. Muy recomendable."</p>
-            </div>
-            <div style="background:var(--offwhite);border-radius:10px;padding:1rem 1.2rem;border:1px solid rgba(13,31,60,.07);">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem;">
-                <span style="font-weight:500;font-size:.88rem;color:var(--navy);">Cliente verificado</span>
-                <span style="color:#F59E0B;font-size:.9rem;">★★★★★</span>
-              </div>
-              <p style="font-size:.82rem;color:var(--gray);line-height:1.6;margin:0;">"Llevo años con esta asesoría y nunca me ha fallado. Gestión rápida, clara y muy cercana."</p>
-            </div>
-            <a href="https://maps.google.com/?q=Asesoría+Novalei+Telde" target="_blank" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;color:var(--mid);text-decoration:underline;margin-top:.3rem;">Ver todas las reseñas en Google →</a>
           </div>
         </div>
 
